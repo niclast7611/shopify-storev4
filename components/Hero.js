@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Hero({ collectionNames }) {
   const betterCollections = collectionNames.slice(1);
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-background-color">
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+        <div className="relative z-10 bg-background-color pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -14,7 +14,10 @@ export default function Hero({ collectionNames }) {
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
+            <polygon
+              points="50,0 100,0 50,100 0,100"
+              style={{ color: "#d8c3a5" }}
+            />
           </svg>
 
           <div>
@@ -91,11 +94,11 @@ export default function Hero({ collectionNames }) {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline text-secondary-color">
-                  Studio57
+                  Hygge
                 </span>
-                <span className="block  xl:inline"> Clothing Co.</span>
+                <span className="block  xl:inline"> Home Furniture</span>
               </h1>
-              <p className="mt-3 text-base text-primary-color sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-black sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -125,7 +128,7 @@ export default function Hero({ collectionNames }) {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1524282745852-a463fa495a7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
           alt=""
           layout="fill"
         />
