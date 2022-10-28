@@ -46,7 +46,7 @@ export default function ProductPageContent({ product }) {
         {/* shows product form which has add to cart and diff variants */}
         <ProductForm product={product} />
       </div>
-      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto text-primary-color">
+      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto text-black">
         {product.description}
       </p>
       <RecommendedList

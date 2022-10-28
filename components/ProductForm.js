@@ -57,9 +57,9 @@ export default function ProductForm({ product }) {
   // console.log("default", defaultValues)
   // console.log("allVariantOptions", allVariantOptions)
   return (
-    <div className="rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3 bg-background-color">
-      <h2 className="text-2xl font-bold text-primary-color">{product.title}</h2>
-      <span className="pb-3 text-primary-color">
+    <div className="rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3 bg-accent-color">
+      <h2 className="text-2xl font-bold text-black">{product.title}</h2>
+      <span className="pb-3 text-black">
         {formatter.format(selectedVariant.variantPrice)}
       </span>
 
